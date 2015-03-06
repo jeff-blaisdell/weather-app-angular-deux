@@ -1,0 +1,15 @@
+/**
+ * This is a dirty dirty hack.
+ * Shadow DOM is difficult to globally style.
+ * http://stackoverflow.com/questions/24108315/bootstrap-styles-not-applying-within-a-shadow-dom-on-chrome-35
+ */
+
+@import "./_bootstrap";
+
+#weather-app /deep/ {
+    @import "./_bootstrap";
+    @import "./_base";
+    @import "./_banner";
+    @import "./_navbar";
+    @import "./_weather";
+}

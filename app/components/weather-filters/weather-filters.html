@@ -1,0 +1,30 @@
+<nav class="navbar navbar-default wm-navbar" role="navigation">
+    <div class="wm-navbar-filters">
+        <form class="navbar-form navbar-left wm-navbar-form" role="search">
+            <div class="form-group wm-form-group">
+                <span class="wm-form-control">
+                    <label for="maxTemperature"><small>Max Temperature</small> {{weatherService.maxTemperature}}&deg;</label>
+                    <span class="wm-range-input">
+                        <input id="maxTemperature"
+                               type="range"
+                               [value]="weatherService.maxTemperature"
+                               (input)="setMaxTemperature($event)"
+                               min="-50"
+                               max="125">
+                    </span>
+                </span>
+                <span class="wm-form-control">
+                    <label for="minTemperature"><small>Min Temperature</small> {{weatherService.minTemperature}}&deg;</label>
+                    <span class="wm-range-input">
+                        <input id="minTemperature"
+                               type="range"
+                               [value]="weatherService.minTemperature"
+                               (input)="setMinTemperature($event)"
+                               min="-50"
+                               max="125">
+                    </span>
+                </span>
+            </div>
+        </form>
+    </div>
+</nav>

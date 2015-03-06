@@ -1,0 +1,53 @@
+.wm-banner {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.wm-banner .wm-jumbotron {
+    background: url('/images/cute-landscape.svg') 0% 80%;
+    margin: 0;
+}
+
+.wm-banner-field-group {
+    display: block;
+    text-align: center;
+}
+
+.wm-banner-field-group input {
+    margin-top: 50px;
+    padding: 0px 0px 0px 5px;
+}
+
+.wm-banner-field-group input::-webkit-input-placeholder { text-align: center; }
+.wm-banner-field-group input::-moz-placeholder { text-align: center; }
+.wm-banner-field-group input:-ms-input-placeholder { text-align: center; }
+
+.wm-banner-logo {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+
+.wm-banner-logo h1 {
+    color: #F7BD49;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.wm-banner-logo p {
+    font-size: 16px;
+    margin: 0px 5px;
+    padding: 0;
+}
+
+.wm-banner .wm-location {
+    padding-top: 10px;
+}
+
+@media (min-width: 800px) {
+    .wm-banner .wm-jumbotron {
+        min-height: 250px;
+        background-position: 0% 100%;
+    }
+}

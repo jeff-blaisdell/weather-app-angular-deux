@@ -1,0 +1,39 @@
+.wm-navbar {
+    padding: 5px 15px;
+}
+
+.wm-navbar-form {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wm-navbar .wm-form-control label {
+    display: block;
+}
+
+@media (min-width: 750px) {
+
+    .wm-navbar-header {
+        display: none;
+    }
+
+    .wm-navbar-filters {
+        display: block;
+    }
+
+    .wm-navbar .wm-form-control {
+        float: left;
+        margin-right: 50px;
+        min-width: 150px
+    }
+
+    .wm-navbar .wm-form-control label {
+        display: block;
+    }
+
+    .wm-navbar-form {
+        border-top: none;
+    }
+
+}

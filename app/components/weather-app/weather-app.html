@@ -1,0 +1,22 @@
+<main>
+    <div class="container">
+        <header>
+            <div class="wm-banner">
+                <div class="jumbotron wm-jumbotron">
+                    <span class="wm-banner-logo">
+                        <h1>{{siteName}}</h1>
+                        <p class="text-primary">{{siteText}}</p>
+                    </span>
+                    <span class="wm-banner-field-group">
+                        <input (change)="lookupLocation($event)" type="text" placeholder="Where are you?" autofocus />
+                    </span>
+                </div>
+                <p class="wm-location">Location: <small>{{geoLocation.name}}</small></p>
+            </div>
+        </header>
+        <section>
+            <weather-filters></weather-filters>
+            <weather-forecast></weather-forecast>
+        </section>
+    </div>
+</main>

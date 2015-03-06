@@ -1,0 +1,37 @@
+<!-- index.html -->
+<html>
+  <head>
+    <title>Weather Me</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico?v=1.1">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="/libs/es6-shim.js"></script>
+    <script type="text/javascript">
+        // Replace with actual Api Key from forecast.io
+        var forecastIoApiKey = 'API_KEY';
+    </script>
+  </head>
+  <body>
+
+    <!-- The app component created in app.es6 -->
+    <weather-app id="weather-app"></weather-app>
+
+	<script>
+	  // Rewrite the paths to load the files
+	  System.paths = {
+	    'angular2/*':'/libs/angular2/*.js', // Angular
+	    'rtts_assert/*': '/libs/rtts_assert/*.js', //Runtime assertions
+        'lodash': '/libs/lodash.js',
+        'jquery': '/libs/jquery.js',
+        'components/*': '/components/*.es6'
+	  };
+
+	  // Kick off the application
+	  System.import('components/weather-app/weather-app');
+	</script>
+
+  </body>
+</html>

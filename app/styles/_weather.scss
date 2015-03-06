@@ -1,0 +1,58 @@
+.wm-panel {
+    padding: 0px 0px 20px 0px;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid #BFBFBF;
+}
+
+.wm-weather-heading {
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wm-weather-heading .wm-date {
+    font-size: 12px;
+}
+
+.wm-weather-body {
+    padding: 0;
+    margin: 0;
+}
+
+.wm-weather-imagery {
+    margin-top: 5px;
+    float: left;
+}
+
+.wm-weather-details {
+    margin-top: 5px;
+    float: left;
+    padding-left: 15px;
+}
+
+.wm-weather-details p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wm-weather-details .wm-weather-detail {
+    line-height: 1.2;
+    font-size: 12px;
+}
+
+.wm-weather-icon {
+    max-width: 50px;
+}
+
+@media (min-width: 768px) {
+    .wm-panel {
+        padding: 0px 0px 0px 0px;
+        border: none;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}

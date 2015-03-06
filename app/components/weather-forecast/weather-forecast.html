@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="panel wm-panel col-md-4 col-sm-6 col-xs-12" *foreach="#day in getDailyForecasts()">
+            <span class="panel-heading wm-weather-heading">
+                <span class="wm-dow">
+                    {{day.getDayOfWeek()}}
+                    <span class="wm-date">{{day.getMonth()}}&nbsp;{{day.time.getUTCDate()}}</span>
+                </span>
+            </span>
+            <span class="panel-body clearfix wm-weather-body">
+                <span class="wm-weather-imagery">
+                    <img class="wm-weather-icon img-responsive" src="{{day.getImageUrl()}}" />
+                </span>
+                <span class="wm-weather-details">
+                    <p class="lead">{{day.temperatureMax}}&deg;</p>
+                    <p class="wm-weather-detail">Min: {{day.temperatureMin}}&deg;</p>
+                    <p class="wm-weather-detail">Humidity: {{day.humidity}}%</p>
+                    <p class="wm-weather-detail">Wind: {{day.windSpeed}} mph</p>
+                    <p class="wm-weather-detail">Chance of Precipitation: {{day.precipProbability}}%</p>
+                </span>
+            </span>
+        </div>
+    </div>
+</div>
